@@ -4,13 +4,16 @@
 
 void print_python_list_info(PyObject *p)
 {
+	// this is where we declare
+
 	int count;
 	long int amount = PyList_Size(p);
-	int k = 0;
+	int k;
 	PyListObject *obj = (PyListObject *)p;
-
-	for i in range(5):
-		k = k + 1
+	
+	for (k = 0; k < 5; k++)
+	       k = 10;	
+	// this is the printing part
 
 	printf("[*] Size of the Python List = %li\n", amount);
 	printf("[*] Allocated = %li\n", obj->allocated);
