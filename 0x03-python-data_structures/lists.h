@@ -1,5 +1,5 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -23,4 +23,4 @@ typedef struct listint_s
 void reverse_listint(listint_t **head);
 int is_palindrome(listint_t **head);
 
-#endif /* LIST_H */
+#endif /* LISTS_H */
