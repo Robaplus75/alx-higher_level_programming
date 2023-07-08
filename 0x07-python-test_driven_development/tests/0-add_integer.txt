@@ -1,0 +1,40 @@
+--------------------------------------------------------
+Documentation for the add_integer.py file
+--------------------------------------------------------
+
+HOW TO USE THIS 
+---------------
+
+YOU JUST CALL THE FUNCTION BY add_integer AND GIVE IT INTEGERS
+
+TESTS
+-----
+
+IMPORTING THE FUNCTION
+
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+TESTING THE FUNCTION
+--------------------
+
+	TESTING WITH INTEGERS
+
+	>>> add_integer(5, 5)
+	10
+
+	TESTING WITH FLOAT AND INTEGERS
+
+	>>> add_integer(3, 3.5)
+	6
+	>>> add_integer(2.6, 2.5)
+	4
+
+	TESTING WITH NON INTEGERS OR NUMBERS
+
+	>>> add_integer(5, "robel")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	>>> add_integer("robel", 5)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
