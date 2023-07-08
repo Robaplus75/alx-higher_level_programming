@@ -38,3 +38,36 @@ TESTING THE FUNCTION
 	>>> add_integer("robel", 5)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
+
+	TESTING WITH ONE ARGUMENT ONLY
+
+	>>> add_integer(3)
+	101
+
+	TESTING WITH NO ARUMENTS
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	>>> add_integer(4, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+	TESTING WITH BOTH ARGUMETNS ARE NON INTEGERS ORNON FLOATS
+
+	>>> add_integer("yooo", "bro")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+	ARUGMENT WITH INFINITY
+
+	>>> add_integer(float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+	TEST WITH NaN NUMBERS
+
+	>>> add_integer(float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
