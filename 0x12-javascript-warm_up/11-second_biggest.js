@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
 function second (myArray) {
-  if (myArray.length === 2 || myArray.length === 3)
-	{
-		return (0);
-	}
+  if (myArray.length === 2 || myArray.length === 3) {
+    return (0);
+  }
 
   let bigest = myArray[2];
   let secondbig = myArray[3];
