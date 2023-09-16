@@ -1,17 +1,15 @@
 #!/usr/bin/python3
 
 import MySQLdb
-import sys
+from sys import argv
 
 '''
 for listing all states in the database
 '''
 
 if __name__ == '__main__':
-    args = sys.argv
-
     db = MySQLdb.connect(host='localhost', port=3306,
-           user=args[1], password=args[2], db=args[3])
+           user=argv[1], password=argv[2], db=argv[3])
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states ORDER BY id ASC")
@@ -22,3 +20,4 @@ if __name__ == '__main__':
 
     cur.close()
     db.close()
+
