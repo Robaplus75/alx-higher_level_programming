@@ -3,6 +3,10 @@
 import MySQLdb
 import sys
 
+'''
+for listing all states in the database
+'''
+
 if __name__ == '__main__':
     args = sys.argv
 
