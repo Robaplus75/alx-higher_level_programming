@@ -20,4 +20,5 @@ if __name__ == "__main__":
     output = cur.fetchall()
 
     for out in output:
-        print(out)
+        if out[1] == argv[4]:
+            print(out)
