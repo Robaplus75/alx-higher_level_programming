@@ -3,9 +3,9 @@
 import MySQLdb
 from sys import argv
 
-'''
+"""
 for listing all states in the database
-'''
+"""
 
 if __name__ == '__main__':
     db = MySQLdb.connect(host='localhost', port=3306,
