@@ -14,7 +14,7 @@ if __name__ == '__main__':
            user=args[1], password=args[2], db=args[3])
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states ORDER BY id;")
+    cur.execute("SELECT * FROM states ORDER BY id ASC;")
     users = cur.fetchall()
 
     for user in users:
