@@ -9,14 +9,17 @@ from sqlalchemy import create_engine
 from sys import argv
 from model_state import Base, State
 
-engine = create_engine(
-        f"mysql+mysqldb://{argv[1]}:{argv[2]}@localhost:3306/{argv[3]}")
+if __name__ == "__main__":
+    engine = create_engine(
+            f"mysql+mysqldb://{argv[1]}:{argv[2]}@localhost:3306/{argv[3]}")
 
-Session = sessionmaker(engine)
+    Session = sessionmaker(engine)
 
-localSession = Session()
+    localSession = Session()
 
-mystates = localSession.query(State).order_by(State.id).all()
+    mystates = localSession.query(State).order_by(State.id).all()
 
-for state in mystates:
-    print(f"{state.id}: {state.name}")
+    for state in mystates:
+        print(f"{state.id}: {state.name}")
+
+    localSession.close()
