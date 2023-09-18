@@ -16,7 +16,7 @@ if __name__ == "__main__":
     localSession = Session()
 
     output = localSession.query(State).filter(State.name.like("%a%"))
-    
+
     for out in output:
         localSession.delete(out)
     localSession.commit()
