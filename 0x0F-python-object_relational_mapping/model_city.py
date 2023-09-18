@@ -5,6 +5,7 @@
 from model_state import Base, Column, Integer, String
 from sqlalchemy import ForeignKey
 
+
 class City(Base):
     __tablename__ = 'cities'
     id = Column(
