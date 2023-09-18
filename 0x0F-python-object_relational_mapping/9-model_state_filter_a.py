@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" Script that lists all state objects thaat contain a"""
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
