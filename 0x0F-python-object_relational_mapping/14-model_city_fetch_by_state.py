@@ -20,4 +20,4 @@ if __name__ == "__main__":
         print("{}: ({}) {}".format(
             out[1].name, out[0].id, out[0].name))
 
-    locaSession.close()
+    localSession.close()
