@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" Definition for the class model """
+
 from model_state import Base, Column, Integer, String
 from sqlalchemy import ForeignKey
 
